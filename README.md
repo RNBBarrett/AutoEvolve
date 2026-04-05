@@ -16,7 +16,7 @@ This section explains the motivation behind autoevolve in plain English. If you 
 
 ### The inspiration: autoresearch
 
-[autoresearch](https://github.com/SakanaAI/AI-Scientist) pioneered a compelling idea: let an AI agent run an autonomous research loop. It reads a goal, writes code, runs experiments, evaluates results, and iterates. This workflow is powerful because it closes the loop between "generate an idea" and "test if it worked" without a human in the middle.
+[autoresearch](https://github.com/karpathy/autoresearch) by Andrej Karpathy pioneered a compelling idea: let an AI agent run an autonomous research loop. It reads a goal, writes code, runs experiments, evaluates results, and iterates. This workflow is powerful because it closes the loop between "generate an idea" and "test if it worked" without a human in the middle.
 
 autoevolve is inspired by that workflow, but it broadens the idea. Instead of being a single research agent tied to one kind of task, autoevolve is a *generic optimization framework*. You can point it at any artifact (Python code, a prompt, or any text-based thing you can score numerically), define a scoring function, and let the evolutionary loop find better versions.
 
@@ -1314,7 +1314,7 @@ These are potential future directions for autoevolve. They are not commitments -
 
 autoevolve draws inspiration from several lines of work:
 
-- **[autoresearch](https://github.com/SakanaAI/AI-Scientist)** -- The primary inspiration for autoevolve's autonomous improvement loop. autoresearch demonstrated that an AI agent can autonomously run research experiments, evaluate results, and iterate. autoevolve generalizes this workflow into a reusable framework.
+- **[autoresearch](https://github.com/karpathy/autoresearch)** by Andrej Karpathy -- The primary inspiration for autoevolve's autonomous improvement loop. autoresearch demonstrated that an AI agent can autonomously run research experiments, evaluate results, and iterate. autoevolve generalizes this workflow into a reusable, generic optimization framework.
 
 - **[OPRO](https://arxiv.org/abs/2309.03409)** (Optimization by PROmpting) -- The idea of feeding prior candidates and their scores back to the LLM as natural-language optimization context. autoevolve's `nl_feedback` mutation mode is directly inspired by this.
 

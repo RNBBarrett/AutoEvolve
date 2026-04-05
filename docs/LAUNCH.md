@@ -197,7 +197,8 @@ Check it out: https://github.com/RNBBarrett/AutoEvolve
 
 ## Credit Guidance
 
-- Mention autoresearch and related prior work respectfully where appropriate.
+- Mention [autoresearch](https://github.com/karpathy/autoresearch) by Andrej Karpathy as the primary inspiration.
+- Tag @karpathy respectfully when appropriate (once, not repeatedly).
 - Do not spam-tag other projects or researchers in social media posts.
 - Do not claim endorsement from any person or organization.
 - Be honest about what this is: a proof of concept that demonstrates a
