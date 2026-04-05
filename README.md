@@ -16,7 +16,7 @@ This section explains the motivation behind autoevolve in plain English. If you 
 
 ### The inspiration: autoresearch
 
-[autoresearch](https://github.com/sakana-ai/ai-scientist) pioneered a compelling idea: let an AI agent run an autonomous research loop. It reads a goal, writes code, runs experiments, evaluates results, and iterates. This workflow is powerful because it closes the loop between "generate an idea" and "test if it worked" without a human in the middle.
+[autoresearch](https://github.com/SakanaAI/AI-Scientist) pioneered a compelling idea: let an AI agent run an autonomous research loop. It reads a goal, writes code, runs experiments, evaluates results, and iterates. This workflow is powerful because it closes the loop between "generate an idea" and "test if it worked" without a human in the middle.
 
 autoevolve is inspired by that workflow, but it broadens the idea. Instead of being a single research agent tied to one kind of task, autoevolve is a *generic optimization framework*. You can point it at any artifact (Python code, a prompt, or any text-based thing you can score numerically), define a scoring function, and let the evolutionary loop find better versions.
 
@@ -69,7 +69,7 @@ One of autoevolve's most important features is **archive feedback**. The archive
 - **Top-scoring exemplars**: The best candidates found so far, so the LLM can see what works.
 - **Diverse exemplars**: Candidates chosen to be maximally different from each other, so the LLM sees a range of approaches.
 
-This creates a **feedback loop**: as the archive fills with scored examples, the LLM gets richer context about what has been tried and what worked. Early generations have sparse context, but later generations benefit from a deep history of experiments. This is inspired by the "exemplar database" concept in [FunSearch](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/).
+This creates a **feedback loop**: as the archive fills with scored examples, the LLM gets richer context about what has been tried and what worked. Early generations have sparse context, but later generations benefit from a deep history of experiments. This is inspired by the "exemplar database" concept in [FunSearch](https://deepmind.google/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/).
 
 ### How OPRO-style feedback differs from raw mutation
 
@@ -241,7 +241,7 @@ These are the building blocks of autoevolve. Understanding them makes everything
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/autoevolve.git
+git clone https://github.com/RNBBarrett/AutoEvolve.git
 cd autoevolve
 
 # Install in editable mode (core only -- no API keys needed)
@@ -1314,11 +1314,11 @@ These are potential future directions for autoevolve. They are not commitments -
 
 autoevolve draws inspiration from several lines of work:
 
-- **[autoresearch](https://github.com/sakana-ai/ai-scientist)** -- The primary inspiration for autoevolve's autonomous improvement loop. autoresearch demonstrated that an AI agent can autonomously run research experiments, evaluate results, and iterate. autoevolve generalizes this workflow into a reusable framework.
+- **[autoresearch](https://github.com/SakanaAI/AI-Scientist)** -- The primary inspiration for autoevolve's autonomous improvement loop. autoresearch demonstrated that an AI agent can autonomously run research experiments, evaluate results, and iterate. autoevolve generalizes this workflow into a reusable framework.
 
 - **[OPRO](https://arxiv.org/abs/2309.03409)** (Optimization by PROmpting) -- The idea of feeding prior candidates and their scores back to the LLM as natural-language optimization context. autoevolve's `nl_feedback` mutation mode is directly inspired by this.
 
-- **[FunSearch](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/)** -- The concept of maintaining an archive of strong programs and using them as exemplars for future generations. autoevolve's archive feedback mechanism follows this principle.
+- **[FunSearch](https://deepmind.google/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/)** -- The concept of maintaining an archive of strong programs and using them as exemplars for future generations. autoevolve's archive feedback mechanism follows this principle.
 
 - **Evolutionary computation research** -- Decades of work on genetic algorithms, evolution strategies, and neuroevolution provide the theoretical foundation for population-based search with mutation, crossover, selection, and diversity.
 

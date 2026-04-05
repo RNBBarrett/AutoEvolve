@@ -139,7 +139,7 @@ This is a POC, not a production system -- but the core loop works and the
 architecture is designed to be extended.  I'd love feedback on the approach,
 the interface, and whether this is useful for your workflows.
 
-GitHub: https://github.com/yourusername/autoevolve
+GitHub: https://github.com/RNBBarrett/AutoEvolve
 ```
 
 ### Suggested Reddit Post Template
@@ -158,7 +158,7 @@ management, OPRO-style feedback, and swarm-based agent coordination.
 It's early-stage but the architecture is clean, tested, and designed to be
 extended.  Three bundled examples included.
 
-GitHub: https://github.com/yourusername/autoevolve
+GitHub: https://github.com/RNBBarrett/AutoEvolve
 
 Would love to hear your thoughts -- especially if you've tried similar
 approaches or have ideas for new use cases.
@@ -177,7 +177,7 @@ diversity archives, and swarm-based agent strategies.
 It's a proof of concept, but the results are promising and the architecture
 is designed to be extended.
 
-Check it out: https://github.com/yourusername/autoevolve
+Check it out: https://github.com/RNBBarrett/AutoEvolve
 
 #opensource #llm #optimization #evolutionary #ai #python
 ```

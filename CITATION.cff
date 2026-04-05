@@ -3,7 +3,7 @@ title: autoevolve
 version: 0.1.0
 date-released: "2026-04-05"
 license: MIT
-repository-code: "https://github.com/yourusername/autoevolve"
+repository-code: "https://github.com/RNBBarrett/AutoEvolve"
 abstract: >-
   A general-purpose evolutionary optimization framework using LLMs as
   intelligent mutation operators.
