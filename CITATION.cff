@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: autoevolve
+version: 0.1.0
+date-released: "2026-04-05"
+license: MIT
+repository-code: "https://github.com/yourusername/autoevolve"
+abstract: >-
+  A general-purpose evolutionary optimization framework using LLMs as
+  intelligent mutation operators.
+type: software
+authors:
+  - family-names: Doe
+    given-names: Jane
+    email: jane.doe@example.com

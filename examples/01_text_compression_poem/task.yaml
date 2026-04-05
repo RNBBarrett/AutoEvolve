@@ -1,0 +1,38 @@
+name: text_compression_poem
+artifact_type: python_code
+artifact_path: artifact.py
+goal_path: goal.md
+evaluator_path: evaluator.py
+
+strategy:
+  type: beam_archive
+  generations: 3
+  beam_width: 2
+  children_per_parent: 2
+  crossover_enabled: true
+  archive_top_k: 3
+  archive_diverse_k: 2
+
+mutator:
+  provider: mock
+  mode: rewrite
+  model: mock-deterministic
+  temperature: 0.2
+  max_candidates_per_call: 1
+
+swarm:
+  enabled: false
+  mutation_agents: 4
+  use_critic: true
+  use_diversity_agent: true
+  max_concurrent_calls: 4
+
+budget:
+  max_total_candidates: 30
+  max_runtime_seconds: 300
+  eval_timeout_seconds: 10
+
+output:
+  save_all_candidates: true
+  write_markdown_log: true
+  write_jsonl_events: true

@@ -1,0 +1,15 @@
+name: test_prompt
+artifact_type: prompt_text
+artifact_path: prompt.txt
+goal_path: goal.md
+evaluator_path: evaluator.py
+dataset_path: dataset.jsonl
+strategy:
+  type: beam
+  generations: 2
+  beam_width: 2
+  children_per_parent: 2
+mutator:
+  provider: mock
+  model: mock-deterministic
+  mode: rewrite

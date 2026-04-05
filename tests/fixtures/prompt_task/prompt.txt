@@ -1,0 +1,13 @@
+Classify the sentiment of the following text as exactly one of: positive, negative, or neutral.
+
+Rules:
+- "positive" means the text expresses approval, happiness, or satisfaction.
+- "negative" means the text expresses disapproval, sadness, or dissatisfaction.
+- "neutral" means the text is factual, balanced, or does not express clear sentiment.
+
+If the sentiment is mixed, choose the label that best describes the overall tone.
+
+Respond with only the label — no explanation.
+
+Text: {text}
+Label:

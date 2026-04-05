@@ -1,0 +1,5 @@
+Classify the following text as positive or negative sentiment.
+
+Text: {text}
+
+Sentiment:

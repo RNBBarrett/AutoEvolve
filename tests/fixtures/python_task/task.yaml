@@ -1,0 +1,14 @@
+name: test_python
+artifact_type: python_code
+artifact_path: artifact.py
+goal_path: goal.md
+evaluator_path: evaluator.py
+strategy:
+  type: beam
+  generations: 2
+  beam_width: 2
+  children_per_parent: 2
+mutator:
+  provider: mock
+  model: mock-deterministic
+  mode: rewrite

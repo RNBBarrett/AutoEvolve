@@ -1,0 +1,1 @@
+"""Artifact types for autoevolve."""

@@ -1,0 +1,48 @@
+# autoevolve task configuration
+#
+# Copy this file as a starting point for your own task.
+# All paths are relative to this file's directory.
+
+name: my_task
+artifact_type: python_code        # python_code or prompt_text
+artifact_path: artifact.py        # The file being optimized
+goal_path: goal.md                # What the optimization should achieve
+evaluator_path: evaluator.py      # Scores candidates numerically
+
+# Search strategy settings
+strategy:
+  type: beam_archive              # beam, beam_archive, or swarm
+  generations: 8                  # Number of generations to run
+  beam_width: 2                   # How many top candidates survive each generation
+  children_per_parent: 3          # Candidates generated per parent
+  crossover_enabled: true         # Whether to attempt crossover on top parents
+  archive_top_k: 5                # Top-scoring candidates included in prompts
+  archive_diverse_k: 3            # Diverse candidates included in prompts
+
+# Mutation settings
+mutator:
+  provider: mock                  # mock, anthropic, openai, ollama, external_command
+  mode: rewrite                   # rewrite, patch, nl_feedback
+  model: mock-deterministic       # Model name (provider-specific)
+  temperature: 0.2                # Sampling temperature
+  max_candidates_per_call: 1      # Candidates to request per LLM call
+
+# Swarm mode settings (only used when strategy.type is 'swarm')
+swarm:
+  enabled: false                  # Set to true for swarm mode
+  mutation_agents: 4              # Number of parallel mutation agents
+  use_critic: true                # Enable critic screening
+  use_diversity_agent: true       # Enable diversity injection
+  max_concurrent_calls: 4         # Max concurrent LLM calls
+
+# Budget limits
+budget:
+  max_total_candidates: 50        # Stop after this many candidates
+  max_runtime_seconds: 600        # Stop after this many seconds
+  eval_timeout_seconds: 10        # Timeout per evaluation
+
+# Output settings
+output:
+  save_all_candidates: true       # Save every candidate artifact to disk
+  write_markdown_log: true        # Write human-readable log.md
+  write_jsonl_events: true        # Write structured events.jsonl

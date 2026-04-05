@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+runs/
+.venv/
+venv/
+.env
+*.so
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temp files from debugging
+tmp*
+
+# Build instructions (not for public distribution)
+BUILD_SPEC.md
+CLAUDE.md
+IMPLEMENTATION_STATUS.md
+.claude/
