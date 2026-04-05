@@ -43,7 +43,7 @@ evolutionary search.
 - [ ] LICENSE file is present (MIT)
 - [ ] `pip install -e .` works cleanly
 - [ ] All three bundled examples run end-to-end with `--provider mock`
-- [ ] `social_preview.png` is in `assets/`
+- [ ] `logo.png` is in `assets/`
 - [ ] GitHub release is tagged as `v0.1.0`
 - [ ] Repository description and topics are set
 - [ ] Social preview image is uploaded in repo settings
@@ -68,7 +68,7 @@ prompt-engineering, optimization, evolutionary-algorithm, automl
 
 - [ ] Description is set (see above)
 - [ ] Topics are added (see above)
-- [ ] Social preview image uploaded (`assets/social_preview.png`)
+- [ ] Social preview image uploaded (`assets/logo.png`)
 - [ ] A GitHub Release is created for `v0.1.0`
 - [ ] Repository is pinned to your profile
 - [ ] GitHub Discussions are enabled (optional but recommended)
