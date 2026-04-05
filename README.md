@@ -1,4 +1,6 @@
-# autoevolve
+<p align="center">
+  <img src="assets/logo.png" alt="autoevolve" width="600">
+</p>
 
 **A general-purpose evolutionary optimization framework that uses LLMs as intelligent mutation operators.**
 
